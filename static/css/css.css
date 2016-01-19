@@ -1,0 +1,323 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+
+
+body {
+  	font-size: 14px;
+  	line-height: 20px;
+  	color: #333333;
+  	background-color: #ffffff;
+}
+/* Typography */
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif!important;
+  	text-rendering: optimizelegibility;
+}
+
+h1.secondary,
+h2.secondary,
+h3.secondary,
+h4.secondary,
+h5.secondary,
+h6.secondary {
+    font-family: "Merriweather", Georgia, serif!important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  font-weight: bold;
+  line-height: 20px;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 40px;
+}
+
+h1 {
+  font-size: 5em;
+  line-height: 1.25em;
+}
+
+h2 {
+  font-size: 3.25em;
+  line-height: 1.25em;
+}
+
+h3 {
+  font-size: 1.75em;
+  line-height: 1.25em;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 11.9px;
+}
+
+h1 small {
+  font-size: 24.5px;
+}
+
+h2 small {
+  font-size: 17.5px;
+}
+
+h3 small {
+  font-size: 14px;
+}
+
+h4 small {
+  font-size: 14px;
+}
+.light{font-weight: 300;}
+.normal{font-weight: 400;}
+.bold{font-weight: 700;}
+
+a{
+  color: #5E3A60;
+  text-decoration: none;
+  font-weight: bold;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../../static/fonts/icomoon.eot?ggztwv');
+    src:    url('../../static/fonts/icomoon.eot?ggztwv#iefix') format('embedded-opentype'),
+        url('../../static/fonts/icomoon.ttf?ggztwv') format('truetype'),
+        url('../../static/fonts/icomoon.woff?ggztwv') format('woff'),
+        url('../../static/fonts/icomoon.svg?ggztwv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-instagram:before {
+    content: "\e900";
+}
+.icon-twitter:before {
+    content: "\e901";
+}
+.icon-twitch:before {
+    content: "\e902";
+}
+.icon-github:before {
+    content: "\e903";
+}
+.icon-linkedin:before {
+    content: "\e904";
+}
+
+/* Buttons */
+.btn {
+	padding: 12px 20px;
+	border-radius: 3px;
+  text-align: center;
+}
+.btn.white {
+	background-color: transparent;
+	border: 2px solid white;
+	cursor: pointer;
+	color: white;
+}
+.btn.white:hover{
+	background-color: white;
+	color: #330033;
+}
+/* Button Effects (Fade) */
+.hvr-fade {
+  	display: inline-block;
+  	vertical-align: middle;
+  	-webkit-transform: translateZ(0);
+  	transform: translateZ(0);
+  	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+  	-moz-osx-font-smoothing: grayscale;
+  	overflow: hidden;
+  	-webkit-transition-duration: 0.3s;
+  	transition-duration: 0.3s;
+  	-webkit-transition-property: color, background-color;
+  	transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  	background-color: white;
+  	color: #330033;
+}
+
+.btn.main {
+  background-color: transparent;
+  border: 2px solid #5E3A60;
+  cursor: pointer;
+  color: #5E3A60;
+  text-decoration: none;
+}
+.btn.main:hover{
+  background-color: #5E3A60;
+  color: white;
+}
+
+.paralx{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 400px;*/
+    height: 100vh;
+    min-height: 40px;
+    padding-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    .hero-nav__inner{
+        z-index: 1;
+    }
+    h1{
+        color: #efefef;
+        font-size: 5vw;
+    }
+    &:before{
+        content: "";
+        background: rgba(#000, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transition: background 400ms;
+    }
+    &.fixme{
+        &:before{
+            background: rgba(#000, 0.8);
+        }
+    }
+}
+.page-content{
+  
+}
+
+
+#position-saver {
+    width: 100%;
+    display: none;
+    -webkit-animation-duration: 0.0s;
+    -webkit-animation-delay: 0.0s;
+    -webkit-animation-iteration-count: 1;
+}
+
+.show-nav{
+    display: block!important;
+    position: fixed;
+    background-color: #200e2f;
+    top: 0px;
+    left: 0;
+}
+.show-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+}
+.show-nav a:hover{background: #6F4571;}
+.hide{display: none;}
+#bar {    
+    position: static;
+    width: 100%;
+    color: #fff;
+    background-color: #200e2f;
+}
+
+/* Misc */
+.full-width {width: 100%;}
+#section0{color: white;
+    width: 100vw; 
+    height: 100vh; 
+    background-color: #200e2f; 
+    background-image: url('../../static/images/portfolio_hero.png');
+    background-repeat:no-repeat;
+    background-position: bottom center;
+  }
+.section{}
+
+/* Cosmetic */
+#fullpage #viewport{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .box-drop{padding-bottom: 40px;}
+
+.roll-down{
+    height: 40px;
+    position: fixed;
+    bottom: 3%;
+    font-size: 18px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.roll-down a{
+  color: white;
+  text-decoration: none;
+  margin: 0 3px;
+}
+
